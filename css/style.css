@@ -1,0 +1,100 @@
+body {
+    background-color: #08090D;
+    color: #E8E1D9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #0D0A0B !important;
+}
+
+.navbar-brand {
+    color: #E8E1D9 !important;
+}
+
+.navbar-brand i {
+    color: #900303 !important;
+}
+
+.nav-link {
+    color: #AAA3A0 !important;
+}
+
+.nav-link:hover {
+    color: #D96C16 !important;
+}
+
+.titulo{
+    color: #B31217;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.subtitulo{
+    color: #AAA3A0;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 10px auto 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #151011;
+    color: #E8E1D9;
+    border: none;
+}
+
+.card-title,
+h1,
+h2 {
+    color: #B31217 !important;
+}
+
+.btn-danger {
+    background-color: #900303;
+    border-color: #900303;
+}
+
+.btn-danger:hover {
+    background-color: #B31217;
+    border-color: #B31217;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.titulo-halloween {
+    text-align: center;
+}
+
+footer {
+    background-color: #0D0A0B !important;
+    color: #AAA3A0;
+    border-top: 2px solid #900303;
+}
+
+footer h4 {
+    color: #E8E1D9;
+}
+
+footer a {
+    color: #AAA3A0 !important;
+}
+
+footer a:hover {
+    color: #D96C16 !important;
+}

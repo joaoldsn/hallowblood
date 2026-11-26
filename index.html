@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalloBlood</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="fontawesome-free-7.3.1-web/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg"data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="fa-solid fa-skull" style="color: rgb(144, 3, 3);"></i> HallowBlood</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">História</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Festivais
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.sympla.com.br/eventos/brasilia-df/halloween?category=collection">Nacionais</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://3cket.com/en/collection/halloween-2026">Internacional</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="alert alert-info text-center" role="alert">
+        <strong>31 de Outubro:</strong>
+        prepare sua fantasia!!
+    </div>
+
+      <div class="container">
+
+        <div class="text-center my-5">
+            <h1 class="titulo">Bem-vindo ao HallowBlood</h1>
+    
+            <p class="subtitulo">
+                Conheça o site mais completo sobre o Halloween!!
+            </p>
+        </div>
+
+</div>
+
+      <div class="container">
+        <div class="row my-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Castelo Gótico sob a Lua Cheia.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Festival de Halloween no Castelo Gótico.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Corgi bruxo sob a lua cheia.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 d-flex">
+              <div class="card h-100 w-100">
+                  <img src="img/Castelo Gótico sob a Lua Cheia.png"
+                       class="card-img-top"
+                       alt="Castelo gótico sombrio iluminado pela lua cheia">
+      
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Castelo das Trevas</h5>
+      
+                      <p class="card-text">
+                          Entre névoas e sombras, um antigo castelo se ergue sob a lua cheia
+                      </p>
+      
+                      <button type="button" class="btn btn-danger mt-auto"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalCastelo">
+                            Explorar
+                        </button>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="col-lg-4 d-flex">
+              <div class="card h-100 w-100">
+                  <img src="img/Festival de Halloween no Castelo Gótico.png"
+                       class="card-img-top"
+                       alt="Festival de Halloween em um antigo castelo gótico">
+      
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Noite de Halloween</h5>
+      
+                      <p class="card-text">
+                          Quando a noite chega, o castelo ganha vida com celebrações
+                      </p>
+      
+                      <button type="button"
+                              class="btn btn-danger mt-auto"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modalFestival">
+                              Conhecer
+                      </button>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="col-lg-4 d-flex">
+              <div class="card h-100 w-100">
+                  <img src="img/Corgi bruxo sob a lua cheia.png"
+                       class="card-img-top"
+                       alt="Cachorro fantasiado de bruxo em uma noite de Halloween">
+      
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Pequeno Bruxo</h5>
+      
+                      <p class="card-text">
+                          Este pequeno bruxo está pronto para explorar o Halloween
+                          em busca de doces e aventuras
+                      </p>
+      
+                      <button type="button"
+                              class="btn btn-danger mt-auto"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modalCorgi">
+                              Fofinho
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="modal fade" id="modalCastelo" tabindex="-1"
+             aria-labelledby="modalCasteloLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCasteloLabel">
+                            Castelo das Trevas
+                        </h5>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/Castelo Gótico sob a Lua Cheia.png"
+                             class="img-fluid mb-3"
+                             alt="Castelo das Trevas">
+                        <p>
+                            Entre névoas e sombras, um antigo castelo se ergue
+                            sob a luz da lua cheia. Durante anos, histórias sobre
+                            criaturas e acontecimentos misteriosos foram contadas
+                            por aqueles que se aproximaram de suas muralhas.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalCastelo" tabindex="-1"
+             aria-labelledby="modalCasteloLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCasteloLabel">
+                            Castelo das Trevas
+                        </h5>
+
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/Castelo Gótico sob a Lua Cheia.png"
+                             class="img-fluid mb-3"
+                             alt="Castelo das Trevas">
+                        <p>
+                            Entre névoas e sombras, um antigo castelo se ergue
+                            sob a luz da lua cheia. Durante anos, histórias sobre
+                            criaturas e acontecimentos misteriosos foram contadas
+                            por aqueles que se aproximaram de suas muralhas.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalCastelo" tabindex="-1"
+             aria-labelledby="modalCasteloLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCasteloLabel">
+                            Castelo das Trevas
+                        </h5>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/Castelo Gótico sob a Lua Cheia.png"
+                             class="img-fluid mb-3"
+                             alt="Castelo das Trevas">
+                        <p>
+                            Entre névoas e sombras, um antigo castelo se ergue
+                            sob a luz da lua cheia. Durante anos, histórias sobre
+                            criaturas e acontecimentos misteriosos foram contadas
+                            por aqueles que se aproximaram de suas muralhas.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="modal fade" id="modalFestival" tabindex="-1"
+aria-labelledby="modalFestivalLabel" aria-hidden="true">
+
+<div class="modal-dialog">
+   <div class="modal-content">
+
+       <div class="modal-header">
+           <h5 class="modal-title" id="modalFestivalLabel">
+               Noite de Halloween
+           </h5>
+
+           <button type="button"
+                   class="btn-close"
+                   data-bs-dismiss="modal">
+           </button>
+       </div>
+       <div class="modal-body">
+
+           <img src="img/Festival de Halloween no Castelo Gótico.png"
+                class="img-fluid mb-3"
+                alt="Festival de Halloween">
+           <p>
+               Quando a noite chega, o antigo castelo se transforma
+               em um grande festival de Halloween. Fantasias, luzes,
+               abóboras e decorações assustadoras tomam conta do lugar.
+           </p>
+           <p>
+               Durante a celebração, visitantes se reúnem para aproveitar
+               uma noite cheia de mistério, diversão e histórias
+               assustadoras.
+           </p>
+       </div>
+       <div class="modal-footer">
+           <button type="button"
+                   class="btn btn-danger"
+                   data-bs-dismiss="modal">
+               Fechar
+           </button>
+       </div>
+   </div>
+</div>
+</div>
+
+<div class="modal fade" id="modalCorgi" tabindex="-1"
+aria-labelledby="modalCorgiLabel" aria-hidden="true">
+
+<div class="modal-dialog">
+   <div class="modal-content">
+       <div class="modal-header">
+           <h5 class="modal-title" id="modalCorgiLabel">
+               Pequeno Bruxo
+           </h5>
+           <button type="button"
+                   class="btn-close"
+                   data-bs-dismiss="modal">
+           </button>
+       </div>
+       <div class="modal-body">
+
+           <img src="img/Corgi bruxo sob a lua cheia.png"
+                class="img-fluid mb-3"
+                alt="Corgi fantasiado de bruxo">
+           <p>
+               Nem todas as criaturas do Halloween precisam ser
+               assustadoras. Este pequeno bruxo está preparado para
+               explorar a noite usando seu chapéu e sua fantasia.
+           </p>
+
+           <p>
+               Sua missão é simples: encontrar o máximo de doces
+               possível antes que a noite de Halloween termine.
+           </p>
+       </div>
+
+       <div class="modal-footer">
+           <button type="button"
+                   class="btn btn-danger"
+                   data-bs-dismiss="modal">
+               Fechar
+           </button>
+       </div>
+   </div>
+</div>
+</div>
+
+      <div class="row my-5 align-items-start" id="sobre">
+        <div class="col-lg-6">
+            <h2 class="titulo-halloween">Sobre o Halloween</h2>
+            <p>
+                O Halloween é uma celebração marcada por histórias,
+                lendas e tradições que atravessaram gerações.
+                Bruxas, fantasmas, castelos, criaturas misteriosas e
+                abóboras iluminadas fazem parte da atmosfera dessa noite.
+            </p>
+            <hr>
+            <p>
+                No HallowBlood, você pode explorar um pouco desse universo
+                sombrio e conhecer algumas das histórias e símbolos que
+                fazem parte do Halloween.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <div class="accordion" id="accordionHalloween">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#origem">
+                            A origem do Halloween
+                        </button>
+                    </h2>
+                    <div id="origem"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#accordionHalloween">
+                        <div class="accordion-body">
+                            O Halloween possui raízes em antigas tradições
+                            europeias relacionadas à mudança das estações,
+                            ao fim das colheitas e às histórias sobre o
+                            mundo dos espíritos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#simbolos">
+                            Símbolos do Halloween
+                        </button>
+                    </h2>
+                    <div id="simbolos"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionHalloween">
+                        <div class="accordion-body">
+                            Abóboras, morcegos, fantasmas, bruxas,
+                            esqueletos e criaturas da noite se tornaram
+                            alguns dos principais símbolos da celebração.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#criaturas">
+                            Criaturas da noite
+                        </button>
+                    </h2>
+                    <div id="criaturas"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionHalloween">
+    
+                        <div class="accordion-body">
+                            Vampiros, lobisomens, fantasmas e outras
+                            criaturas sobrenaturais aparecem em diversas
+                            lendas e histórias associadas ao Halloween.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="row my-5 align-items-start" id="historia">
+    <div class="col-lg-12">
+        <h2 class="titulo-halloween">História do Halloween</h2>
+        <p>
+          O Halloween, celebrado no dia 31 de outubro, possui uma história que
+          atravessa muitos séculos. Suas origens são frequentemente relacionadas
+          ao antigo festival celta de Samhain, celebrado principalmente em regiões
+          que hoje correspondem à Irlanda e ao Reino Unido. Essa celebração marcava
+          o fim do período das colheitas e a chegada da parte mais fria e escura
+          do ano.
+      </p>
+      <p>
+          Com o passar do tempo, antigas tradições europeias se misturaram com
+          celebrações cristãs relacionadas ao Dia de Todos os Santos e ao Dia de
+          Finados. O próprio nome Halloween está relacionado à expressão
+          "All Hallows' Eve", que significa a véspera do Dia de Todos os Santos.
+          Ao longo dos séculos, a data passou por diversas transformações e ganhou
+          costumes diferentes de acordo com cada região.
+      </p>
+      <p>
+          Durante o século XIX, especialmente com a imigração irlandesa e escocesa,
+          muitas dessas tradições chegaram aos Estados Unidos. Lá, a comemoração
+          se popularizou e adquiriu várias das características pelas quais é
+          conhecida atualmente, como festas, fantasias, histórias assustadoras,
+          decorações e a tradição de crianças pedirem doces de casa em casa.
+      </p>
+      <p>
+          Outro símbolo famoso é a lanterna feita com abóbora, conhecida como
+          Jack-o'-lantern.
+          <button type="button"
+            class="btn btn-sm btn-info"
+            data-bs-toggle="popover"
+            data-bs-title="Curiosidade"
+            data-bs-content="Antes das abóboras, eram utilizados vegetais como nabos para criar essas lanternas.">
+        Saiba mais
+    </button>
+          
+          A tradição tem relação com costumes trazidos por
+          imigrantes europeus, que originalmente utilizavam outros vegetais para
+          produzir lanternas. Nos Estados Unidos, as abóboras se tornaram uma
+          alternativa comum e acabaram se transformando em um dos principais
+          símbolos do Halloween.
+      </p>
+      <p>
+          Atualmente, o Halloween é celebrado em diversos países e está fortemente
+          presente na cultura popular. Bruxas, fantasmas, vampiros, lobisomens,
+          esqueletos e casas assombradas fazem parte de sua identidade visual.
+          Filmes, jogos, livros e outras formas de entretenimento também ajudaram
+          a transformar a data em uma grande celebração do mistério, da fantasia
+          e das histórias de terror.
+      </p>
+    </div>
+
+    <footer class="text-light mt-5 py-4">
+      <div class="container text-center">
+  
+          <h4 class="mb-3">
+              <i class="fa-solid fa-skull" style="color: rgb(144, 3, 3);"></i>
+              HallowBlood
+          </h4>
+  
+          <p class="mb-3">
+              O site mais completo sobre Halloween.
+          </p>
+          <hr>
+          <p class="mb-0">
+              &copy;2026 HallowBlood - João Leite e Luiz Antonio.
+          </p>
+  
+      </div>
+  </footer>
+
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
